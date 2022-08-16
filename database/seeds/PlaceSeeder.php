@@ -1,0 +1,128 @@
+<?php
+
+use App\Place;
+use Illuminate\Database\Seeder;
+
+class PlaceSeeder extends Seeder
+{
+
+    public function run()
+    {
+        Place::insert([
+            ['name' => 'umuahia', 'state_id' =>1,  'created_at' => now(), 'updated_at' => now()],
+            ['name' => ' fct',  'state_id' =>2,'created_at' => now(), 'updated_at' => now()   ],
+            ['name' => ' yola',  'state_id' =>3,'created_at' => now(), 'updated_at' => now()  ],
+            ['name' => 'uyo',  'state_id' =>4,'created_at' => now(), 'updated_at' => now()  ],
+            ['name' => 'awka',  'state_id' =>5,'created_at' => now(), 'updated_at' => now()    ],
+            ['name' => 'bauchi',  'state_id' =>6,'created_at' => now(), 'updated_at' => now()    ],
+            ['name' => 'yenagoa',  'state_id' =>7,'created_at' => now(), 'updated_at' => now() ],
+            ['name' => 'makurdi' ,  'state_id' =>8 ,'created_at' => now(), 'updated_at' => now()  ],
+            ['name' => 'maiduguri',  'state_id' =>9  ,'created_at' => now(), 'updated_at' => now() ],
+            ['name' => 'calabar',  'state_id' =>10  ,'created_at' => now(), 'updated_at' => now() ],
+            ['name' => 'asaba',  'state_id' =>11  ,'created_at' => now(), 'updated_at' => now() ],
+            ['name' => 'abakaliki',  'state_id' =>12  ,'created_at' => now(), 'updated_at' => now() ],
+            ['name' => 'benin',  'state_id' =>13  ,'created_at' => now(), 'updated_at' => now() ],
+            ['name' => 'ado ekiti', 'state_id' =>14  ,'created_at' => now(), 'updated_at' => now() ],
+            ['name' => 'enugu',  'state_id' =>15  ,'created_at' => now(), 'updated_at' => now()  ],
+            ['name' => 'gombe' , 'state_id' =>16 ,'created_at' => now(), 'updated_at' => now() ],
+            ['name' => 'owerri',  'state_id' =>17 ,'created_at' => now(), 'updated_at' => now() ],
+            ['name' => 'dutse' , 'state_id' =>18 ,'created_at' => now(), 'updated_at' => now() ],
+            ['name' => 'kaduna' , 'state_id' =>19 ,'created_at' => now(), 'updated_at' => now() ],
+            ['name' => 'kano' , 'state_id' =>20 ,'created_at' => now(), 'updated_at' => now() ],
+            ['name' => 'katsina' , 'state_id' =>21 ,'created_at' => now(), 'updated_at' => now() ],
+            ['name' => 'birnin kebbi' , 'state_id' =>22 ,'created_at' => now(), 'updated_at' => now() ],
+            ['name' => 'lokoja' , 'state_id' =>23 ,'created_at' => now(), 'updated_at' => now() ],
+            ['name' => 'ilorin' , 'state_id' =>24 ,'created_at' => now(), 'updated_at' => now() ],
+
+            ['name' => 'ikeja', 'state_id' =>25  ,'created_at' => now(), 'updated_at' => now() ],
+            ['name' => 'yaba', 'state_id' =>25  ,'created_at' => now(), 'updated_at' => now() ],
+            ['name' => 'bariga', 'state_id' =>25  ,'created_at' => now(), 'updated_at' => now() ],
+            ['name' => 'magodo', 'state_id' =>25  ,'created_at' => now(), 'updated_at' => now() ],
+            ['name' => 'alausa', 'state_id' =>25  ,'created_at' => now(), 'updated_at' => now() ],
+            ['name' => 'ogba', 'state_id' =>25 ,'created_at' => now(), 'updated_at' => now()  ],
+            ['name' => 'ipaja', 'state_id' =>25  ,'created_at' => now(), 'updated_at' => now() ],
+            ['name' => 'ketu', 'state_id' =>25  ,'created_at' => now(), 'updated_at' => now() ],
+            ['name' => 'ojota', 'state_id' =>25  ,'created_at' => now(), 'updated_at' => now() ],
+            ['name' => 'ojo', 'state_id' =>25  ,'created_at' => now(), 'updated_at' => now() ],
+            ['name' => 'berger', 'state_id' =>25  ,'created_at' => now(), 'updated_at' => now() ],
+            ['name' => 'mile 12', 'state_id' =>25  ,'created_at' => now(), 'updated_at' => now() ],
+            ['name' => 'mile 2', 'state_id' =>25  ,'created_at' => now(), 'updated_at' => now() ],
+            ['name' => 'amuwo odofin', 'state_id' =>25  ,'created_at' => now(), 'updated_at' => now() ],
+            ['name' => 'agbara', 'state_id' =>25  ,'created_at' => now(), 'updated_at' => now() ],
+            ['name' => 'lasuth', 'state_id' =>25  ,'created_at' => now(), 'updated_at' => now() ],
+            ['name' => 'alimosho', 'state_id' =>25  ,'created_at' => now(), 'updated_at' => now() ],
+            ['name' => 'obadore', 'state_id' =>25  ,'created_at' => now(), 'updated_at' => now() ],
+            ['name' => 'badore', 'state_id' =>25  ,'created_at' => now(), 'updated_at' => now() ],
+            ['name' => 'ajah', 'state_id' =>25  ,'created_at' => now(), 'updated_at' => now() ],
+            ['name' => 'ibeju lekki', 'state_id' =>25  ,'created_at' => now(), 'updated_at' => now() ],
+            ['name' => 'lekki', 'state_id' =>25  ,'created_at' => now(), 'updated_at' => now() ],
+            ['name' => 'awoyaya', 'state_id' =>25  ,'created_at' => now(), 'updated_at' => now() ],
+            ['name' => 'lakowe', 'state_id' =>25  ,'created_at' => now(), 'updated_at' => now() ],
+            ['name' => 'jakande', 'state_id' =>25  ,'created_at' => now(), 'updated_at' => now() ],
+            ['name' => 'isolo', 'state_id' =>25  ,'created_at' => now(), 'updated_at' => now() ],
+            ['name' => 'jibowu', 'state_id' =>25  ,'created_at' => now(), 'updated_at' => now() ],
+            ['name' => 'fadeyi', 'state_id' =>25  ,'created_at' => now(), 'updated_at' => now() ],
+            ['name' => 'obanikoro', 'state_id' =>25  ,'created_at' => now(), 'updated_at' => now() ],
+            ['name' => 'anthony', 'state_id' =>25  ,'created_at' => now(), 'updated_at' => now() ],
+            ['name' => 'ilupeju', 'state_id' =>25  ,'created_at' => now(), 'updated_at' => now() ],
+            ['name' => 'oshodi', 'state_id' =>25  ,'created_at' => now(), 'updated_at' => now() ],
+
+
+            ['name' => 'amuwo odofin', 'state_id' =>25  ,'created_at' => now(), 'updated_at' => now() ],
+            ['name' => 'apapa', 'state_id' =>25  ,'created_at' => now(), 'updated_at' => now() ],
+            ['name' => 'iddo', 'state_id' =>25  ,'created_at' => now(), 'updated_at' => now() ],
+            ['name' => 'cms', 'state_id' =>25  ,'created_at' => now(), 'updated_at' => now() ],
+            ['name' => 'marina', 'state_id' =>25  ,'created_at' => now(), 'updated_at' => now() ],
+            ['name' => 'lagos island', 'state_id' =>25  ,'created_at' => now(), 'updated_at' => now() ],
+            ['name' => 'sura', 'state_id' =>25  ,'created_at' => now(), 'updated_at' => now() ],
+            ['name' => 'adekunle', 'state_id' =>25  ,'created_at' => now(), 'updated_at' => now() ],
+            ['name' => 'alagomoeji', 'state_id' =>25  ,'created_at' => now(), 'updated_at' => now() ],
+            ['name' => 'ebute metta', 'state_id' =>25  ,'created_at' => now(), 'updated_at' => now() ],
+            ['name' => 'oyingbo', 'state_id' =>25  ,'created_at' => now(), 'updated_at' => now() ],
+            ['name' => 'akoka', 'state_id' =>25  ,'created_at' => now(), 'updated_at' => now() ],
+            ['name' => 'akowonjo', 'state_id' =>25  ,'created_at' => now(), 'updated_at' => now() ],
+            ['name' => 'iyana ipaja', 'state_id' =>25  ,'created_at' => now(), 'updated_at' => now() ],
+            ['name' => 'egbeda', 'state_id' =>25 ,'created_at' => now(), 'updated_at' => now()  ],
+            ['name' => 'agege', 'state_id' =>25  ,'created_at' => now(), 'updated_at' => now() ],
+            ['name' => 'mushin', 'state_id' =>25  ,'created_at' => now(), 'updated_at' => now() ],
+            ['name' => 'ilasa', 'state_id' =>25  ,'created_at' => now(), 'updated_at' => now() ],
+
+            ['name' => 'itire', 'state_id' =>25  ,'created_at' => now(), 'updated_at' => now() ],
+            ['name' => 'ijesha', 'state_id' =>25  ,'created_at' => now(), 'updated_at' => now() ],
+            ['name' => 'ojuelegba', 'state_id' =>25  ,'created_at' => now(), 'updated_at' => now() ],
+            ['name' => 'ojota', 'state_id' =>25  ,'created_at' => now(), 'updated_at' => now() ],
+            ['name' => 'ojodu berger', 'state_id' =>25  ,'created_at' => now(), 'updated_at' => now() ],
+            ['name' => 'satellite town', 'state_id' =>25  ,'created_at' => now(), 'updated_at' => now() ],
+            ['name' => 'festac town', 'state_id' =>25  ,'created_at' => now(), 'updated_at' => now() ],
+            ['name' => 'festac', 'state_id' =>25  ,'created_at' => now(), 'updated_at' => now() ],
+
+            ['name' => 'palmgroove', 'state_id' =>25  ,'created_at' => now(), 'updated_at' => now() ],
+            ['name' => 'ijora', 'state_id' =>25  ,'created_at' => now(), 'updated_at' => now() ],
+            ['name' => 'costain', 'state_id' =>25  ,'created_at' => now(), 'updated_at' => now() ],
+            ['name' => 'aguda', 'state_id' =>25  ,'created_at' => now(), 'updated_at' => now() ],
+            ['name' => 'surulere', 'state_id' =>25  ,'created_at' => now(), 'updated_at' => now() ],
+
+            ['name' => 'maryland', 'state_id' =>25  ,'created_at' => now(), 'updated_at' => now() ],
+            ['name' => 'ikeja', 'state_id' =>25  ,'created_at' => now(), 'updated_at' => now() ],
+            ['name' => 'obanikoro', 'state_id' =>25  ,'created_at' => now(), 'updated_at' => now() ],
+            ['name' => 'onipanu', 'state_id' =>25  ,'created_at' => now(), 'updated_at' => now() ],
+
+            ['name' => 'shomolu', 'state_id' =>25  ,'created_at' => now(), 'updated_at' => now() ],
+            ['name' => 'somolu', 'state_id' =>25  ,'created_at' => now(), 'updated_at' => now() ],
+
+
+            ['name' => 'lafia', 'state_id' =>26  ,'created_at' => now(), 'updated_at' => now() ],
+            ['name' => 'minna' , 'state_id' =>27 ,'created_at' => now(), 'updated_at' => now() ],
+            ['name' => 'abeokuta', 'state_id' =>28  ,'created_at' => now(), 'updated_at' => now() ],
+            ['name' => 'akure', 'state_id' =>29  ,'created_at' => now(), 'updated_at' => now() ],
+            ['name' => 'oshogbo',  'state_id' =>30  ,'created_at' => now(), 'updated_at' => now() ],
+            ['name' => 'ibadan' , 'state_id' =>31 ,'created_at' => now(), 'updated_at' => now() ],
+            ['name' => 'jos' , 'state_id' =>32 ,'created_at' => now(), 'updated_at' => now() ],
+            ['name' => 'port harcourt', 'state_id' =>33  ,'created_at' => now(), 'updated_at' => now() ],
+            ['name' => 'sokoto', 'state_id' =>34  ,'created_at' => now(), 'updated_at' => now() ],
+            ['name' => 'jalingo', 'state_id' =>35 ,'created_at' => now(), 'updated_at' => now() ],
+            ['name' => 'damaturu', 'state_id' =>36  ,'created_at' => now(), 'updated_at' => now() ],
+            ['name' => 'gusau' , 'state_id' =>37 ,'created_at' => now(), 'updated_at' => now() ]
+        ]);
+    }
+}
