@@ -13,14 +13,14 @@ jobs:
           uses: actions/checkout@master
       -   name: Deploy to Server
           uses: ngocquyhoang/deploy@laravel
+          run:  cd /k9x
+          run:  git pull origin main
+          run:  composer install
+          run:  php artisan config:cache
+          run:  php artisan migrate --force
           with:
             user: ${{ secrets.USER }}
             host: ${{ secrets.HOST }}
-            run: |
-              cd /k9x
-              git pull origin main
-              composer install
-              php artisan config:cache
-              php artisan migrate --force
+            port: ${{ secrets.PORT }}
           env:
             DEPLOY_KEY: ${{ secrets.DEPLOY_KEY }}
