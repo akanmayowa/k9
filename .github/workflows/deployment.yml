@@ -16,7 +16,7 @@ jobs:
           with:
             user: ${{ secrets.USER }}
             host: ${{ secrets.HOST }}
-            script: |
+            run: |
               cd /k9x
               git pull origin main
               composer install
