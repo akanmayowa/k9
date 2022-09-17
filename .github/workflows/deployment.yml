@@ -16,7 +16,6 @@ jobs:
           with:
             user: ${{ secrets.USER }}
             host: ${{ secrets.HOST }}
-            port: ${{ secrets.PORT }}
             script: |
               cd /k9x
               git pull origin main
