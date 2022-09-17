@@ -11,17 +11,19 @@ jobs:
     steps:
       -   name: Checkout Repository
           uses: actions/checkout@master
-      -   name: Checkout Repositorys
-          run:  git pull origin main
-      -   name: Checkout Repositorysss
-          run:  php artisan config:cache
-      -   name: Checkout Repositorysss             
-          run:  php artisan migrate --force    
-      -   name: Checkout Repositoryssssss   
+      -   uses: shivammathur/setup-php@v2
+          with:
+               php-version: '8.1'
+      -   name: Speed up the packages installation process
+          run: composer global require hirak/prestissimo
+      -   name: Install Packages
+          run: composer install --no-dev
+      -   name: Deploy to Server
+          uses: ngocquyhoang/deploy@laravel
           with:
             user: ${{ secrets.USER }}
             host: ${{ secrets.HOST }}
             port: ${{ secrets.PORT }}
-            path: "home/spitekte/k9x"
+            path: "home/spitekte/"
           env:
             DEPLOY_KEY: ${{ secrets.DEPLOY_KEY }}
