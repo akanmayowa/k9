@@ -12,7 +12,7 @@ jobs:
       -   name: Checkout Repository
           uses: actions/checkout@master
       -   name: Deploy to Server
-          run:  cd /k9x
+          run:  cd /home2/spitekte/k9x
       -   name: Checkout Repositorys
           run:  git pull origin main
       -   name: Checkout Repositoryss
