@@ -12,12 +12,17 @@ jobs:
       -   name: Checkout Repository
           uses: actions/checkout@master
       -   name: Deploy to Server
-          uses: ngocquyhoang/deploy@laravel
           run:  cd /k9x
+      -   name: Checkout Repositorys
           run:  git pull origin main
+      -   name: Checkout Repositoryss
           run:  composer install
+      -   name: Checkout Repositorysss
           run:  php artisan config:cache
-          run:  php artisan migrate --force
+      -   name: Checkout Repositorysss             
+          run:  php artisan migrate --force    
+      -   name: Checkout Repositoryssssss   
+          uses: ngocquyhoang/deploy@laravel
           with:
             user: ${{ secrets.USER }}
             host: ${{ secrets.HOST }}
