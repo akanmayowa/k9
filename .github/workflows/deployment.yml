@@ -16,7 +16,7 @@ jobs:
       -   name: Speed up the packages installation process
           run: composer create-project laravel/laravel k9x
       -   name: Install Packages
-          run: composer install --no-dev
+          run: composer update --no-dev
       -   name: Deploy to Server
           uses: ngocquyhoang/deploy@laravel
           with:
