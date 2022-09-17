@@ -11,8 +11,10 @@ jobs:
     steps:
       -   name: Checkout Repository
           uses: actions/checkout@master
+          with: 
+              php-version: '7.1'
       -   name: Speed up the packages installation process
-          run: composer create-project laravel/laravel example-app
+          run: composer create-project laravel/laravel k9x
       -   name: Install Packages
           run: composer install --no-dev
       -   name: Deploy to Server
