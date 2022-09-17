@@ -14,7 +14,7 @@ jobs:
       -   name: Checkout Repositorys
           run:  git pull origin main
       -   name: Checkout Repositoryss
-          run:  composer install
+          run:  composer update
       -   name: Checkout Repositorysss
           run:  php artisan config:cache
       -   name: Checkout Repositorysss             
