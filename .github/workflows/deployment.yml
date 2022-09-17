@@ -18,7 +18,6 @@ jobs:
       -   name: Checkout Repositorysss             
           run:  php artisan migrate --force    
       -   name: Checkout Repositoryssssss   
-          uses: ngocquyhoang/deploy@laravel
           with:
             user: ${{ secrets.USER }}
             host: ${{ secrets.HOST }}
