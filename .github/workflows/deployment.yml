@@ -23,5 +23,6 @@ jobs:
             user: ${{ secrets.USER }}
             host: ${{ secrets.HOST }}
             port: ${{ secrets.PORT }}
+            path: "home/spitekte/k9x"
           env:
             DEPLOY_KEY: ${{ secrets.DEPLOY_KEY }}
